@@ -11,32 +11,32 @@ import smtplib
 
 #需要配置分割线 ===================================================================
 # 项目配置
-project_name = "HyCurrency" #工程名
-scheme = "HyCurrency" #scheme
+project_name = "XXX" #工程名
+scheme = "XXX" #scheme
 project_type = "-workspace" #工程类型 pod工程 -workspace 普通工程 -project
 configuration = "Release" #编译模式 Debug,Release
 
 # git路径配置
-git_login_needPassword = 1
-git_name = "yuzhongrui"
-git_password = "yuzhongrui.com"
-git_remote_init_addr = "http://dev.esongbai.xyz/git/AppTeam/ForexIos.git"
+git_login_needPassword = 1 #是否需要密码登陆
+git_name = "XXX"    #git仓库的用户名
+git_password = "XXX"  #git仓库的密码
+git_remote_init_addr = "XXXX"  #git仓库的远程地址
 
 # fir
-fir_api_token = "3c5adeb462f62ff7dd7d8c2c904a533a" # firm的api token
-download_address = "http://fir.im/etonghui" #firm 下载地址
+fir_api_token = "XXXXXX" # firm的api token
+download_address = "XXXXXX" #firm 下载地址
 
 #邮件配置
-app_name = "易通汇" #App名
-from_name = "余忠瑞"
-from_addr = "1101287926@qq.com"
-password = "ahwzaqpiugmibaad"
-smtp_server = "smtp.qq.com"
-to_addr = ['1101287926@qq.com','598005481@qq.com','1194127720@qq.com']
+app_name = "XXXX" #App名
+from_name = "XXXXXX" #发送邮件的昵称
+from_addr = "XXXX"  #发送邮件的账号
+password = "XXXXX"  #密码  qq邮箱使用的是授权吗
+smtp_server = "smtp.qq.com"  #邮箱服务器
+to_addr = ['XXXX@qq.com','XXXX@qq.com','XXXXX@qq.com']  #接收邮件的邮箱号
 
 #需要配置分割线 ===================================================================
 
-#拼接仓库地址  git clone http://账号:地址@dev.esongbai.xyz/git/AppTeam/ForexIos.git
+#拼接仓库地址 
 def git_remote_addr():
     remote_addr = git_remote_init_addr
     git_password_account = git_name + ":" + git_password + "@"
