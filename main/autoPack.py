@@ -105,7 +105,7 @@ def upload_fir():
     if os.path.exists("%s/%s" % (os.getcwd(),ipa_filename)):
         # 直接使用fir 有问题 这里使用了绝对地址 在终端通过 which fir 获得
         result = True
-        ret = os.system("fir publish '%s/%s/%s.ipa' --token='%s'" % (os.getcwd(),ipa_filename,project_name,fir_api_token))
+        ret = os.system("fir publish '%s/%s/%s.ipa' --token='%s' --changelog='%s/changeLogInfo'" % (os.getcwd(),ipa_filename,project_name,fir_api_token,os.getcwd()))
     else:
         print("没有找到ipa文件")
     return result
